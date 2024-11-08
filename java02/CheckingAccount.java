@@ -28,10 +28,16 @@ public class CheckingAccount extends BankAccount {
         setBalance(getBalance() - amount);
         }
     }
-    public void Report(String name, double balance,double overdraftLimit){
-        this.name = name;
-        this.balance = balance;
-        this.overdraftLimit = overdraftLimit;
+    public void Report(){
+ 
         System.out.println("Name" + name + "Balance: " + balance + "Overdraft Limit: " + overdraftLimit);
+    }
+
+    public double getOverdraftLimit() {
+        return overdraftLimit;
+    }
+
+    public void setOverdraftLimit(double overdraftLimit) {
+        this.overdraftLimit = overdraftLimit;
     }
 }

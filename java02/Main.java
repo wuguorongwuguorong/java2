@@ -8,9 +8,9 @@ public class Main {
         a.setName("John");
         a.setBalance(5000);
         a.Report();
-        CheckingAccount randomReport = new CheckingAccount();
+        BankAccount randomReport = new CheckingAccount("Jon" , 5000 , 2000);
         randomReport.Report();
-        SavingsAccount danielReport = new SavingsAccount();
+        BankAccount danielReport = new SavingsAccount("Daniel",5000,10);
         danielReport.Report();
 
 

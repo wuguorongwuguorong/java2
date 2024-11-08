@@ -21,10 +21,8 @@ public class SavingsAccount extends BankAccount{
         System.out.println("Interest applied. New balance: " + balance);
     }
 
-    public void Report(String name, double balance, double interestRate){
-        this.name = name;
-        this.balance = balance;
-        this.interestRate = interestRate;
+    public void Report(){
+      
         System.out.println("Name" + name + "Balance: " + balance + "Interest Rate: " + interestRate);
 
     }
